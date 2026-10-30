@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fitness Tracker</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:#eefaf3;
+}
+.header{
+    background:#198754;
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+.container{
+    width:800px;
+    margin:30px auto;
+}
+.workout{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px #bbb;
+}
+h2{
+    color:#198754;
+}
+input,select,textarea{
+    padding:9px;
+    margin:7px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+button{
+    background:#198754;
+    color:white;
+    border:0;
+    padding:11px 25px;
+    border-radius:5px;
+}
+table{
+    width:100%;
+    margin-top:25px;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 3px 10px #ccc;
+}
+th{
+    background:#198754;
+    color:white;
+}
+th,td{
+    padding:13px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+.badge{
+    background:#d1f2df;
+    color:#198754;
+    padding:5px 10px;
+    border-radius:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>💪 Fitness Tracker</h1>
+    <p>Track your daily fitness activities</p>
+</div>
+
+<div class="container">
+
+<div class="workout">
+
+<h2>Today's Workout</h2>
+
+<form>
+
+Name:
+<input type="text" placeholder="Your name"><br>
+
+Exercise:
+<select>
+    <option>Running</option>
+    <option>Walking</option>
+    <option>Cycling</option>
+    <option>Yoga</option>
+</select><br>
+
+Duration:
+<input type="number" placeholder="Minutes">
+
+Date:
+<input type="date"><br>
+
+Intensity:
+<input type="radio" name="i"> Low
+<input type="radio" name="i"> Medium
+<input type="radio" name="i"> High
+<br>
+
+Notes:<br>
+<textarea rows="3" cols="60"
+placeholder="Write your workout notes"></textarea>
+
+<br>
+
+<center>
+<button>Save Workout</button>
+</center>
+
+</form>
+
+</div>
+
+<h2>Workout History</h2>
+
+<table>
+
+<tr>
+<th>Date</th>
+<th>Exercise</th>
+<th>Duration</th>
+<th>Intensity</th>
+</tr>
+
+<tr>
+<td>10-08-2026</td>
+<td>Running</td>
+<td>30 min</td>
+<td><span class="badge">Medium</span></td>
+</tr>
+
+<tr>
+<td>09-08-2026</td>
+<td>Yoga</td>
+<td>20 min</td>
+<td><span class="badge">Low</span></td>
+</tr>
+
+<tr>
+<td>08-08-2026</td>
+<td>Cycling</td>
+<td>45 min</td>
+<td><span class="badge">High</span></td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
